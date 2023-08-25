@@ -1,13 +1,13 @@
 {
     "builds": [{
-        "src": "myCv/wsgi.py",
+        "src": "kajal/wsgi.py",
         "use": "@vercel/python",
         "config": { "maxLambdaSize": "15mb" }
     }],
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "myCv/wsgi.py"
+            "dest": "kajal/wsgi.py"
         }
     ]
 }
